@@ -10,11 +10,11 @@ module "eks" {
 
   cluster_endpoint_public_access = true
 
- enable_cluster_creator_admin_permissions = true   # NEW LINE
- 
-eks_managed_node_group_defaults = {
-  ami_type = "AL2023_x86_64_STANDARD"
-}
+  enable_cluster_creator_admin_permissions = true # NEW LINE
+
+  eks_managed_node_group_defaults = {
+    ami_type = "AL2023_x86_64_STANDARD"
+  }
 
   eks_managed_node_groups = {
     one = {
